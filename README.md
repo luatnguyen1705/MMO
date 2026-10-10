@@ -6,7 +6,7 @@
 
 | # | Dự án | Thị trường | Mô hình kiếm tiền | Phase |
 |---|-------|-----------|-------------------|-------|
-| 01 | [YouTube AI tài chính](projects/01-youtube-ai-finance/) | Theo kênh (mặc định: VN, cân nhắc EN) | AdSense, affiliate, sponsor | 0 · Nghiên cứu |
+| 01 | [YouTube AI tài chính](projects/01-youtube-ai-finance/) | Việt Nam (+ kiều bào) | AdSense, affiliate, sponsor | 0 · Nghiên cứu (gần xong) |
 | 02 | [TikTok Shop VN · gia dụng](projects/02-tiktokshop-vn-giadung/) | Việt Nam | Hoa hồng affiliate (video + live) | 0 · Nghiên cứu |
 | 03 | [Social US · Amazon Affiliate](projects/03-us-amazon-affiliate/) | Mỹ | Hoa hồng Amazon Associates | 0 · Nghiên cứu |
 

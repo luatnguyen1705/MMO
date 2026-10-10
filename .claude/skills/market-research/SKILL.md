@@ -34,7 +34,14 @@ description: Nghiên cứu thị trường/nền tảng/xu hướng để quyế
 - [ ] Có kết luận hành động được, không chỉ mô tả
 
 ## Bài học
-- (chưa có)
+- 2026-10-10 — [dự án 01] Nghiên cứu lớn: chia 5–6 luồng song song độc lập (format & tool · đối thủ VN · đối thủ lớn/khán giả ·
+  mô hình quốc tế & chính sách · kiếm tiền & benchmark · tài khoản/thuế/pháp lý), mỗi luồng ghi file riêng vào
+  `projects/<p>/research/research_notes/<tiêu đề>/`, rồi tổng hợp thành `projects/<p>/research/reports/<tiêu đề>.md`.
+- 2026-10-10 — Môi trường cloud bị chặn nhiều nguồn (YouTube, Social Blade, support.google.com, nhiều tên miền .vn) → số liệu
+  phần lớn từ snippet tìm kiếm. Luôn ghi rõ giới hạn dữ liệu trong báo cáo và đề xuất cách lấp (API, người dùng tra tay).
+- 2026-10-10 — Sau nghiên cứu: đồng bộ kết luận vào README/CLAUDE.md/RESEARCH-PLAN/DECISIONS của dự án, kiến thức chung vào
+  `shared/knowledge/`, quy trình lặp lại thành skill.
 
 ## Changelog
 - 2026-10-10 — Tạo skill.
+- 2026-10-10 — Thêm bài học về quy trình nghiên cứu song song và nơi lưu ghi chú/báo cáo.

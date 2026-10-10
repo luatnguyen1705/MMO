@@ -15,7 +15,10 @@ description: Viết kịch bản video YouTube tài chính (dự án 01) từ m�
 2. Dàn ý: Hook (0–15s, hứa hẹn rõ ràng khớp tiêu đề) → bối cảnh → 3–5 ý chính, mỗi ý có "open loop" → kết luận → CTA.
 3. Viết lời đọc tự nhiên (câu ngắn, ~140–160 từ/phút tiếng Anh; ~180–200 từ/phút tiếng Việt `[CẦN XÁC MINH theo giọng đã chọn]`).
 4. Cột gợi ý hình ảnh cho từng đoạn (stock / chart / AI image / text overlay).
-5. Kiểm tra: không lời khuyên đầu tư cụ thể, có disclaimer, số liệu khớp nguồn, có góc nhìn riêng (không chỉ tóm tắt tin).
+5. Kiểm tra: không khuyến nghị mua/bán/nắm giữ mã cụ thể (luật chứng khoán VN), không nhắc sàn crypto chưa cấp phép,
+   có disclaimer "nội dung giáo dục, không phải khuyến nghị đầu tư", số liệu khớp nguồn (fact-check bằng LLM thứ hai + mở nguồn gốc),
+   có góc nhìn riêng (không chỉ tóm tắt tin), tiêu đề không gây hiểu lầm (rủi ro spam/deceptive → xoá kênh).
+   Có affiliate/tài trợ → câu công bố bằng lời ở đầu video và tại đoạn nhắc sản phẩm.
 6. Lưu `content/scripts/YYYY-MM-DD-<slug>.md`.
 
 ## Output
@@ -26,9 +29,12 @@ description: Viết kịch bản video YouTube tài chính (dự án 01) từ m�
 - [ ] Mọi số liệu có nguồn
 - [ ] Có disclaimer, không YMYL vi phạm
 - [ ] Có ít nhất 1 phân tích/góc nhìn riêng
+- [ ] Không có "nhân vật chuyên gia AI" trông như người thật
+- [ ] Ưu tiên gợi ý hình: biểu đồ thật / minh hoạ hoạt hình; cảnh AI chân thực về người/sự kiện thật → phải khai nhãn synthetic
 
 ## Bài học
 - (chưa có)
 
 ## Changelog
 - 2026-10-10 — Tạo bản nháp.
+- 2026-10-10 — Bổ sung kiểm tra pháp lý VN, chính sách AI persona 7/2026, chống tiêu đề lừa dối (từ nghiên cứu).
