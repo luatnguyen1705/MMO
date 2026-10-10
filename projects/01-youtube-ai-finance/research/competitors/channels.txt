@@ -1,0 +1,22 @@
+# Danh sách kênh cần audit bằng shared/automation/youtube_channel_audit.py
+# Mỗi dòng: @handle, URL hoặc channel ID. Handle dưới đây là ứng viên từ nghiên cứu 2026-10-10 — [CẦN XÁC MINH] handle chính xác.
+# --- VN faceless / AI / storytelling ---
+# CLB Tỷ Phú
+# Đế Chế Doanh Nhân
+# Kinh Tế World
+# Thiết Phong - Thích Kinh Tế
+# Góc Nhìn Kinh Tế
+# Tài chính & Kinh doanh
+# Cú Thông Thái
+# Lóng
+@spiderum
+# --- VN có người dẫn (đối chiếu) ---
+# Web5ngay
+# Thái Phạm
+# HieuTV
+# --- Quốc tế (mô hình tham khảo) ---
+@EconomicsExplained
+@MagnatesMedia
+@TheSwedishInvestor
+@ModernMBA
+@HowMoneyWorks

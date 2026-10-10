@@ -5,7 +5,7 @@ description: Nghiên cứu đối thủ (kênh YouTube, tài khoản TikTok, tra
 
 # competitor-research — Mổ xẻ đối thủ
 
-**Mức tự động hoá:** L1 · **Phạm vi:** dùng chung (mỗi dự án có thể có biến thể riêng)
+**Mức tự động hoá:** L1 (YouTube: L2 với script audit) · **Phạm vi:** dùng chung (mỗi dự án có thể có biến thể riêng)
 
 ## Input
 - Dự án, nền tảng, từ khoá ngách, số lượng đối thủ cần phân tích (mặc định 10).
@@ -14,6 +14,9 @@ description: Nghiên cứu đối thủ (kênh YouTube, tài khoản TikTok, tra
 1. **Tìm danh sách**: tìm kiếm theo từ khoá ngách trên nền tảng + công cụ ngoài (vd Social Blade, vidIQ/Nexlev cho YouTube;
    Kalodata/FastMoss/TikTok Shop Creator Center cho TikTok Shop; PinInspector/Tailwind cho Pinterest). Chọn 3 nhóm:
    *top lớn* (chuẩn mực), *đang lên nhanh* (≤ 12 tháng tuổi, tăng mạnh — đáng học nhất), *nhỏ nhưng ra đơn/ra view đều*.
+   - **YouTube (L2):** đưa danh sách kênh vào `projects/<p>/research/competitors/channels.txt` rồi chạy
+     `python3 shared/automation/youtube_channel_audit.py --channels <file> --out projects/<p>/data/processed/channel-audit`
+     (cần `YOUTUBE_API_KEY`). Ra CSV số liệu kênh + video gần nhất kèm hệ số outlier — dùng để chọn video top phân tích ở bước 3.
 2. **Ghi hồ sơ từng đối thủ** vào `projects/<p>/research/competitors/<nen-tang>-<ten>.md` theo mẫu bên dưới.
 3. **Phân tích nội dung top**: 10 nội dung tốt nhất + 5 nội dung gần nhất của mỗi đối thủ — hook 3 giây đầu, độ dài,
    cấu trúc, CTA, tần suất đăng, giờ đăng, cách gắn link/sản phẩm.
@@ -44,7 +47,11 @@ description: Nghiên cứu đối thủ (kênh YouTube, tài khoản TikTok, tra
 - [ ] SUMMARY.md kết thúc bằng danh sách giả thuyết test cụ thể
 
 ## Bài học
-- (chưa có)
+- 2026-10-10 — [dự án 01] Môi trường cloud của Claude bị chặn youtube.com, Social Blade, Playboard → không lấy được số liệu
+  kênh qua web. Giải pháp: YouTube Data API (googleapis.com truy cập được, chỉ cần API key) hoặc người dùng tự tra tay.
+  Luôn kiểm tra quyền truy cập nguồn dữ liệu TRƯỚC khi giao nghiên cứu đối thủ.
+- 2026-10-10 — Tìm kiếm web xử lý tiếng Việt kém; nên tìm bằng cả từ khoá có dấu, không dấu và tiếng Anh.
 
 ## Changelog
 - 2026-10-10 — Tạo skill.
+- 2026-10-10 — Thêm bước audit YouTube bằng script API; thêm bài học về nguồn dữ liệu bị chặn.
