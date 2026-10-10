@@ -8,3 +8,4 @@
 | ElevenLabs | Giọng AI | Voice-over | | Có | 01 | Chưa setup |
 | CapCut | Dựng video | Edit, phụ đề, TTS Việt | | Không chính thức | 01, 02 | |
 | n8n / Make | Điều phối | Pipeline, lịch chạy | | Có | | Chưa chọn |
+| YouTube Data API v3 | Dữ liệu | Audit đối thủ, số liệu kênh | Miễn phí (10k unit/ngày) | Có | 01, 03 | Hướng dẫn: `youtube-data-api.md` |
