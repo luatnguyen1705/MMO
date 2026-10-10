@@ -88,3 +88,14 @@ Mục tiêu dài hạn là đẩy các skill cốt lõi lên L3.
 - Tuân thủ chính sách nền tảng và pháp luật: công bố affiliate (disclosure), không reup vi phạm bản quyền
   nguyên trạng, không spam, không lời khuyên tài chính sai lệch. Ưu tiên tài khoản bền vững hơn lợi nhuận ngắn hạn.
 - Khi thêm dự án mới: dùng skill `new-project` (hoặc `scripts/new-project.sh`) và cập nhật `projects/README.md`.
+
+## 6. Làm việc trên nhiều máy (cloud + 2 máy tính)
+
+Lịch sử chat **không** đồng bộ giữa các máy — **repo GitHub mới là bộ nhớ chung**. Vì vậy:
+
+- **Đầu phiên:** `git pull` nhánh đang làm (phiên cloud tự clone mới nhất).
+- **Cuối mỗi tác vụ:** mọi kết quả, quyết định, bài học phải nằm trong file (JOURNAL, DECISIONS, skill, research) → commit + push.
+  Không để thông tin quan trọng chỉ nằm trong lịch sử chat.
+- Mặc định làm trên **cloud** (truy cập từ máy nào cũng được). Việc cần trình duyệt đã đăng nhập (Claude in Chrome)
+  → làm trên máy local bằng `claude --chrome`, hoặc kéo phiên cloud về bằng `claude --teleport`; xong thì push.
+- Ghi chú phiên local quan trọng vào `projects/<p>/ops/JOURNAL.md` để phiên ở máy khác đọc được.
