@@ -16,7 +16,8 @@ description: Nghiên cứu đối thủ (kênh YouTube, tài khoản TikTok, tra
    *top lớn* (chuẩn mực), *đang lên nhanh* (≤ 12 tháng tuổi, tăng mạnh — đáng học nhất), *nhỏ nhưng ra đơn/ra view đều*.
    - **YouTube (L2):** đưa danh sách kênh vào `projects/<p>/research/competitors/channels.txt` rồi chạy
      `python3 shared/automation/youtube_channel_audit.py --channels <file> --out projects/<p>/data/processed/channel-audit`
-     (cần `YOUTUBE_API_KEY`). Ra CSV số liệu kênh + video gần nhất kèm hệ số outlier — dùng để chọn video top phân tích ở bước 3.
+     (cần `YOUTUBE_API_KEY`). Tên kênh chưa rõ handle → tra bằng `search.list?type=channel&q=<tên>&regionCode=VN`
+     rồi lấy kênh khớp tên + sub lớn nhất (100 đơn vị quota/lần tìm); ghi chú tên gốc sau `#` cuối dòng. Ra CSV số liệu kênh + video gần nhất kèm hệ số outlier — dùng để chọn video top phân tích ở bước 3.
 2. **Ghi hồ sơ từng đối thủ** vào `projects/<p>/research/competitors/<nen-tang>-<ten>.md` theo mẫu bên dưới.
 3. **Phân tích nội dung top**: 10 nội dung tốt nhất + 5 nội dung gần nhất của mỗi đối thủ — hook 3 giây đầu, độ dài,
    cấu trúc, CTA, tần suất đăng, giờ đăng, cách gắn link/sản phẩm.
@@ -52,6 +53,12 @@ description: Nghiên cứu đối thủ (kênh YouTube, tài khoản TikTok, tra
   Luôn kiểm tra quyền truy cập nguồn dữ liệu TRƯỚC khi giao nghiên cứu đối thủ.
 - 2026-10-10 — Tìm kiếm web xử lý tiếng Việt kém; nên tìm bằng cả từ khoá có dấu, không dấu và tiếng Anh.
 
+- 2026-10-10 — [dự án 01] Tên kênh VN trùng rất nhiều (vd 4 kênh "CLB Tỷ Phú") — luôn đối chiếu sub/số video, đừng tin
+  handle đoán. Kiểm tra `last_upload`: nhiều kênh từng nổi đã ngừng đăng (dấu hiệu mô hình không bền). Kênh 0 video công
+  khai hoặc đã đổi chủ đề → loại khỏi so sánh.
+- 2026-10-10 — Chỉ số hữu ích nhất để so sánh: view trung vị video dài + đăng/tuần (lộ ra kênh "nhiều mà loãng").
+
 ## Changelog
 - 2026-10-10 — Tạo skill.
 - 2026-10-10 — Thêm bước audit YouTube bằng script API; thêm bài học về nguồn dữ liệu bị chặn.
+- 2026-10-10 — Thêm bước tra handle bằng search API; script hỗ trợ ghi chú cuối dòng trong channels.txt; bài học đối chiếu kênh.

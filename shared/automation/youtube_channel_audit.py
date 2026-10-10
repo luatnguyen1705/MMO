@@ -7,7 +7,7 @@ Dùng:
         --channels projects/01-youtube-ai-finance/research/competitors/channels.txt \
         --out projects/01-youtube-ai-finance/data/processed/channel-audit
 
-channels.txt: mỗi dòng một kênh — @handle, URL kênh, hoặc channel ID (UC...). Dòng bắt đầu bằng # bị bỏ qua.
+channels.txt: mỗi dòng một kênh — @handle, URL kênh, hoặc channel ID (UC...). Phần sau # (cả dòng hoặc cuối dòng) là ghi chú, bị bỏ qua.
 
 Đầu ra (trong thư mục --out, gắn ngày):
     YYYY-MM-DD-channels.csv  — số liệu kênh: sub, view, số video, ngày tạo, tần suất đăng, view trung vị 30 video gần nhất…
@@ -164,8 +164,8 @@ def main() -> None:
     if not key:
         raise SystemExit("Thiếu YOUTUBE_API_KEY (đặt trong .env hoặc biến môi trường).")
 
-    refs = [line.strip() for line in Path(args.channels).read_text(encoding="utf-8").splitlines()
-            if line.strip() and not line.strip().startswith("#")]
+    refs = [line.split("#", 1)[0].strip() for line in Path(args.channels).read_text(encoding="utf-8").splitlines()]
+    refs = [ref for ref in refs if ref]
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     today = dt.date.today().isoformat()

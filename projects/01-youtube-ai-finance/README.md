@@ -21,7 +21,7 @@
 Cảnh báo sớm: tháng 3 mà ≤ 10.000 view hoặc ≤ 100 sub → xem lại chủ đề/thumbnail trước khi tăng sản lượng.
 
 ## Lộ trình
-- [x] Phase 0 — Chọn ngôn ngữ (VN), ngách con, format ([báo cáo](research/reports/Kênh%20YouTube%20AI%20tài%20chính%20Việt.md)) — còn: số liệu đối thủ trực tiếp
+- [x] Phase 0 — Chọn ngôn ngữ (VN), ngách con, format ([báo cáo](research/reports/Kênh%20YouTube%20AI%20tài%20chính%20Việt.md)) — [audit đối thủ](research/competitors/SUMMARY.md) xong 2026-10-10
 - [ ] Phase 1 — Test thủ công 10–15 video, 2–3 format
 - [ ] Phase 2 — Chuẩn hoá: kịch bản → voice → dựng → thumbnail → upload thành skill
 - [ ] Phase 3 — Pipeline bán tự động (người duyệt kịch bản + thumbnail)

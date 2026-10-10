@@ -41,5 +41,5 @@ Chỉ đọc/ghi trong thư mục này. Kiến thức YouTube chung → `shared/
 | ElevenLabs / TTS khác | Giọng đọc | Chưa setup |
 | CapCut / ffmpeg / Remotion | Dựng video | Chưa chọn |
 | vidIQ / TubeBuddy / Nexlev | Nghiên cứu từ khoá, đối thủ | Chưa setup |
-| YouTube Data API | Audit đối thủ (`shared/automation/youtube_channel_audit.py`), số liệu, upload | Script sẵn sàng — cần API key |
+| YouTube Data API | Audit đối thủ (`shared/automation/youtube_channel_audit.py`), số liệu, upload | Đang dùng (API key trong môi trường) — audit 2026-10-10 |
 | n8n / Make | Điều phối pipeline | Chưa chọn |

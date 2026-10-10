@@ -1,19 +1,22 @@
 # Danh sách kênh cần audit bằng shared/automation/youtube_channel_audit.py
-# Mỗi dòng: @handle, URL hoặc channel ID. Handle dưới đây là ứng viên từ nghiên cứu 2026-10-10 — [CẦN XÁC MINH] handle chính xác.
+# Mỗi dòng: @handle, URL hoặc channel ID. Handle VN đã đối chiếu bằng YouTube Data API search ngày 2026-10-10
+# (chọn kênh khớp tên + sub lớn nhất). Kênh để trong comment = chưa tìm được/không phù hợp, kèm lý do.
 # --- VN faceless / AI / storytelling ---
-# CLB Tỷ Phú
-# Đế Chế Doanh Nhân
-# Kinh Tế World
-# Thiết Phong - Thích Kinh Tế
-# Góc Nhìn Kinh Tế
-# Tài chính & Kinh doanh
-# Cú Thông Thái
-# Lóng
-@spiderum
+@clbtyphu                  # CLB Tỷ Phú
+@dechedoanhnhan            # Đế Chế Doanh Nhân (kênh nhỏ ~4k sub — đối chiếu kênh mới)
+@thietphong-thichkinhte    # Thiết Phong - Thích Kinh Tế
+@gocnhinkinhte0403         # Góc Nhìn Kinh Tế
+@taichinhkinhdoanhtv       # Tài chính & Kinh doanh
+@cuthongthai               # Cú Thông Thái
+@longngghienn              # Lóng
+@kinhtehocvuive            # Kinh Tế Học Vui Vẻ (thêm 2026-10-10 từ search "kinh tế vĩ mô")
+@phiasauhaoquang           # Phía Sau Hào Quang (thêm 2026-10-10 từ search "vì sao sụp đổ")
+# Kinh Tế World — @kinhteworld (UCkgb24PdZfjMWzpL01RXo8w) có 64,8k sub nhưng 0 video công khai → bỏ qua
 # --- VN có người dẫn (đối chiếu) ---
-# Web5ngay
-# Thái Phạm
-# HieuTV
+@thaiphamofficialvn        # Thái Phạm
+@hieu-tv                   # HieuTV (Hiếu Nguyễn)
+# Web5ngay — search API không ra kênh chính [CẦN XÁC MINH] handle, người dùng tra tay
+@spiderum
 # --- Quốc tế (mô hình tham khảo) ---
 @EconomicsExplained
 @MagnatesMedia
